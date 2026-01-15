@@ -472,32 +472,4 @@
         
         // Add some interactivity to the code lines
         const codeLines = document.querySelectorAll('.code-line');
-        codeLines.forEach(line => {
-            line.addEventListener('click', function() {
-                this.classList.toggle('glowing-text');
-                setTimeout(() => {
-                    this.classList.toggle('glowing-text');
-                }, 1000);
-            });
-        });
-        
-        // Make the apology lines stand out
-        const apologyLines = [6, 7, 8, 9];
-        apologyLines.forEach(lineNum => {
-            const line = document.querySelector(`.code-line:nth-child(${lineNum})`);
-            if (line) {
-                line.classList.add('apology-line');
-            }
-        });
-        
-        // Add heartbeat to line 9 (the love declaration)
-        const loveLine = document.querySelector('.code-line:nth-child(9)');
-        if (loveLine) {
-            const textSpan = loveLine.querySelector('.string');
-            if (textSpan) {
-                textSpan.classList.add('heart');
-            }
-        }
-    </script>
-</body>
-</html>
+;
